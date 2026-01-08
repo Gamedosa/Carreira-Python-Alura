@@ -1,0 +1,3 @@
+No início da jornada, você vai aprender a programar com Python a partir de problemas simples, usando lógica e estruturas básicas para construir suas primeiras aplicações. Essa etapa é focada em desenvolver o raciocínio computacional e dominar os conceitos essenciais da linguagem: variáveis, condicionais, laços, funções e entrada e saída de dados.
+
+Você também começará a entender como o código se organiza dentro de um programa. A ideia é ganhar autonomia aos poucos, aprendendo a decompor problemas, reconhecer padrões e aplicar boas práticas desde os primeiros passos. Esse é o momento de criar, errar, praticar e evoluir, construindo a base para projetos mais avançados.
