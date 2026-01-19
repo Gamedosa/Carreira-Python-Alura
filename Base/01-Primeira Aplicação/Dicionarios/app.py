@@ -15,16 +15,37 @@ def exibir_nome_do_progama():
           ''')
 
 def exibir_opcoes():
+    '''
+    Função responsavel por exibir opções do sistema
+
+    -OutPuts: Opções disponiveis no sistema
+
+    '''
     print('1.Cadastrar Restaurante\n')
     print('2.Listar Restaurante\n')
     print('3.Ativar Restaurante\n')
     print('4.Sair\n')
 
 def voltar_ao_menu_principal():
+    '''
+    Função responsável por voltar ao menu principal
+
+    -Input: qualquer tecla digitada
+
+    -Output: Retrocede ao menu principal
+    '''
     input('\nAperte uma tecla para voltar ao menu anterior.\n')
     main()
 
 def exibir_subtitulo(texto):
+    '''
+    Função utilizada para mostar subtitulo
+
+    -Input: Um subtitulo Informado
+
+    -Output: O subtitulo informado
+    '''
+    
     os.system('cls')
     linha = '*' * len((texto))
     print(linha)
@@ -34,13 +55,29 @@ def exibir_subtitulo(texto):
 
 
 def finalizar_app():
+    '''
+    Função responsável por finalizar o aplicativo
+
+    -Output: Finalizando Aplicativo
+    '''
     exibir_subtitulo('\n Finalizando Aplicativo')
-    
+  
 def opcao_invalida():
+
     print('Opção invalida.\n')
     voltar_ao_menu_principal()
 
 def cadastrar_restaurante():
+    '''
+    Função responsavel por cadastrar novos restaurantes
+
+    -Inputs:
+    -Nome Do Restaurante
+    -Categoria do Restaurante
+
+    Outputs:
+    Adiciona um novo Restaurante a lista de Restaurantes
+    '''
 
     exibir_subtitulo('Cadastro de novos restaurantes\n')
     nome_restaurante = input('Digite o nome do Restaurante que deseja cadastrar:\n')
@@ -52,6 +89,14 @@ def cadastrar_restaurante():
     voltar_ao_menu_principal()
 
 def listar_restaurante():
+    '''
+    Função Responsável por listar Restaurantes
+
+    -Outputs:
+    O nome dos Restaurantes, Categoria e Status
+
+
+    '''
     
     exibir_subtitulo('Listando Restaurantes...')
 
@@ -79,6 +124,16 @@ def alternar_estado_restaurante():
     voltar_ao_menu_principal()
 
 def escolher_opcao():
+    '''
+    Função Responsável por escolher uma opçao disponvel do aplicativo
+
+    -Input: 
+    opções [1,2,3,4]
+
+    -OutPut: 
+    Função relacionada ao numero escolhido
+
+    '''
     try:
         opcao_escolhida = int(input('Escolha uma opção: '))
 
