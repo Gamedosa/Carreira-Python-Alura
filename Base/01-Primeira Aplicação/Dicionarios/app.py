@@ -26,7 +26,12 @@ def voltar_ao_menu_principal():
 
 def exibir_subtitulo(texto):
     os.system('cls')
+    linha = '*' * len((texto))
+    print(linha)
     print(texto)
+    print(linha)
+    print()
+
 
 def finalizar_app():
     exibir_subtitulo('\n Finalizando Aplicativo')
@@ -49,14 +54,13 @@ def cadastrar_restaurante():
 def listar_restaurante():
     
     exibir_subtitulo('Listando Restaurantes...')
-    
+
+    print(f'{'Nome do restaurante'.ljust(30)} | {'Categoria'.ljust(20)} | Status')
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
         categoria_restaurante = restaurante['categoria']
-        ativo_restaurante = restaurante['ativo']
-
-    
-        print(f'Resturante - {nome_restaurante} | {categoria_restaurante} | {ativo_restaurante} ')
+        ativo_restaurante ='ativado' if restaurante['ativo'] else 'desativado'
+        print(f'Resturante-{nome_restaurante.ljust(20)}|{categoria_restaurante.ljust(20)}|{ativo_restaurante} ')
     voltar_ao_menu_principal()
 
 def alternar_estado_restaurante():
